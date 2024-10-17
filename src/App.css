@@ -1,38 +1,65 @@
-.App {
+.app {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.list-container {
+  width: 45%;
+  border: 5px solid black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.employee, .team-member {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.employee.added {
+  background-color: lightgrey;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-btn {
+  background-color: blue;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.remove-btn {
+  background-color: red;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sort-btn {
+  background-color: rgb(215, 192, 255);
+  color: white;
+  margin-bottom: 10px;
+}
+
+.average-age {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
 }
